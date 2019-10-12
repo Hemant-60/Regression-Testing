@@ -65,7 +65,7 @@ for i in range(0,nums):
     curr_index=find_max_index(priority)
     priority[curr_index]=0
 
-    if(is_all_zeros(priority) or (not has_changed_lines(changedLines))):
+    if(is_all_zeros(priority) and (not has_changed_lines(changedLines))):
         break
 
     flag=0
